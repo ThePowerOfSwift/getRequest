@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="getRequest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="response" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhP-Wz-8gW">
+                                <rect key="frame" x="165" y="39" width="270.5" height="232.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270.5" id="1Ff-Eo-o8p"/>
+                                    <constraint firstAttribute="height" constant="232.5" id="thQ-3R-18z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjP-Jd-CUk">
+                                <rect key="frame" x="286" y="192" width="30" height="30"/>
+                                <state key="normal" title="get">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getRequestAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a0k-yd-5rY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFh-8g-8Gx">
+                                <rect key="frame" x="285" y="279" width="31" height="30"/>
+                                <state key="normal" title="post">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postRequestAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKR-aJ-uQE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fjP-Jd-CUk" firstAttribute="centerX" secondItem="qFh-8g-8Gx" secondAttribute="centerX" id="HPf-8Z-eq3"/>
+                            <constraint firstItem="qFh-8g-8Gx" firstAttribute="top" secondItem="fjP-Jd-CUk" secondAttribute="bottom" constant="57" id="HrT-aT-43o"/>
+                            <constraint firstItem="dhP-Wz-8gW" firstAttribute="centerX" secondItem="fjP-Jd-CUk" secondAttribute="centerX" constant="-0.75" id="QMF-7l-s1g"/>
+                            <constraint firstItem="fjP-Jd-CUk" firstAttribute="top" secondItem="dhP-Wz-8gW" secondAttribute="bottom" constant="-79.5" id="axc-T4-uut"/>
+                            <constraint firstAttribute="centerY" secondItem="fjP-Jd-CUk" secondAttribute="centerY" constant="93" id="pwK-LW-hlI"/>
+                            <constraint firstAttribute="centerX" secondItem="fjP-Jd-CUk" secondAttribute="centerX" constant="-1" id="swd-9s-gZa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resText" destination="dhP-Wz-8gW" id="fbl-ld-8Lm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
